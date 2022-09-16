@@ -9,7 +9,7 @@
 
 body {
     background: linear-gradient(purple, darkblue);
-    height: 100vh;
+    height: 150vh;
 }
 
 .wrapper {
@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 img {
