@@ -1,16 +1,16 @@
 
 export const tasks = [{
-    name: 'Pablo',
-    chore: 'Limpar por cima',
+    name: 'Lucas',
+    chore: 'Roupas, Caixa do Simba, Lixo',
     img: './images/red.jpg'
 },
 {
-    name: 'Lucas',
-    chore: 'Caixa do simba',
+    name: 'Pablo',
+    chore: 'Limpar por cima e Banheiro',
     img: '/'
 },
 {
     name: 'Nilo',
-    chore: 'Roupas',
+    chore: 'Varrer o chão casa e Sacada',
     img: '/'
 }]
