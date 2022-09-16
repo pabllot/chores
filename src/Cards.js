@@ -3,6 +3,7 @@ import { tasks } from './chores'
 import pablo from './images/pablo.png'
 import lucas from './images/lucas.png'
 import nilo from './images/nilo.png'
+import faxina from './images/faxina.png'
 
 
 import './styles.css';
@@ -70,9 +71,19 @@ const three =
 
 </main>
 
+const four =
+<div className='alternative'>
+    <div className='text'>Digite apenas o dia que você está procurando...</div>
+</div> 
+
+const zero = 
+<div className='alternativo'>
+    <img className='zero' src={faxina}></img>
+</div>
+
 const Cards = () => {
     const [value, setValue] = useState('')
-    const [show, setShow] = useState(one)
+    const [show, setShow] = useState(zero)
 
 
     
@@ -117,6 +128,8 @@ const Cards = () => {
             case '30':
                 setShow(three)
                 break
+            default:
+                setShow(four)
         }
     }
 
@@ -128,7 +141,7 @@ const Cards = () => {
 
 
     return (
-    <>    
+    <div className='wrapper'>    
     <form className='form'>
         <label>
             <input className='input' type="string" name="name" onChange={handleChange} />
@@ -136,7 +149,7 @@ const Cards = () => {
         <input type="submit" className='button' value="Digite o número" onClick={handleSubmit} />
     </form>
     <div>{show}</div>
-    </>
+    </div>
   )
 }
 
